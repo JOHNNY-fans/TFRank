@@ -1,0 +1,20 @@
+{
+    "order": [
+      "Bio.", "Earth.", "Econ.", "Psy.", "Rob.", "Stack.", "Sus.",
+      "Leet.", "Pony", "AoPS", "TheoQ.", "TheoT."
+    ],
+    "name_map": {
+      "Bio.": "biology",
+      "Earth.": "earth_science",
+      "Econ.": "economics",
+      "Psy.": "psychology",
+      "Rob.": "robotics",
+      "Stack.": "stackoverflow",
+      "Sus.": "sustainable_living",
+      "Leet.": "leetcode",
+      "Pony": "pony",
+      "AoPS": "aops",
+      "TheoQ.": "theoremqa_questions",
+      "TheoT.": "theoremqa_theorems"
+    }
+  }

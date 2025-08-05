@@ -1,0 +1,52 @@
+evaluation/rank_results/BRIGHT/tfrank-sft-grpo-qwen3-8B-nothink/theoremqa_questions.rearanker_msmarco_only_grpo-qwen3-8B_pointwise_no_think.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/rank_results/BRIGHT/tfrank-sft-grpo-qwen3-8B-nothink/theoremqa_questions.rearanker_msmarco_only_grpo-qwen3-8B_pointwise_no_think.jsonl
+evaluation/rank_results/BRIGHT_reasonir_gpt4/tfrank-sft-grpo-qwen3-8B-nothink/theoremqa_questions.rearanker_msmarco_only_grpo-qwen3-8B_pointwise_no_think.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/rank_results/BRIGHT_reasonir_gpt4/tfrank-sft-grpo-qwen3-8B-nothink/theoremqa_questions.rearanker_msmarco_only_grpo-qwen3-8B_pointwise_no_think.jsonl
+evaluation/input/BRIGHT/theoremqa_questions.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/theoremqa_questions.yesno_score.jsonl
+evaluation/input/BRIGHT/leetcode.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/leetcode.yesno_score.jsonl
+evaluation/input/BRIGHT/earth_science.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/earth_science.yesno_score.jsonl
+evaluation/input/BRIGHT/psychology.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/psychology.yesno_score.jsonl
+evaluation/input/BRIGHT/economics.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/economics.yesno_score.jsonl
+evaluation/input/BRIGHT/robotics.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/robotics.yesno_score.jsonl
+evaluation/input/BRIGHT/sustainable_living.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/sustainable_living.yesno_score.jsonl
+evaluation/input/BRIGHT/pony.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/pony.yesno_score.jsonl
+evaluation/input/BRIGHT/aops.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/aops.yesno_score.jsonl
+evaluation/input/BRIGHT/biology.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/biology.yesno_score.jsonl
+evaluation/input/BRIGHT/stackoverflow.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/stackoverflow.yesno_score.jsonl
+evaluation/input/BRIGHT/theoremqa_theorems.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT/theoremqa_theorems.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/theoremqa_questions.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/theoremqa_questions.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/leetcode.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/leetcode.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/earth_science.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/earth_science.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/psychology.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/psychology.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/economics.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/economics.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/robotics.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/robotics.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/sustainable_living.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/sustainable_living.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/pony.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/pony.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/aops.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/aops.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/biology.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/biology.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/stackoverflow.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/stackoverflow.yesno_score.jsonl
+evaluation/input/BRIGHT_reasonir_gpt4/theoremqa_theorems.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
+./evaluation/input/BRIGHT_reasonir_gpt4/theoremqa_theorems.yesno_score.jsonl

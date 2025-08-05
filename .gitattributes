@@ -50,3 +50,85 @@ evaluation/input/BRIGHT_reasonir_gpt4/stackoverflow.yesno_score.jsonl filter=lfs
 ./evaluation/input/BRIGHT_reasonir_gpt4/stackoverflow.yesno_score.jsonl
 evaluation/input/BRIGHT_reasonir_gpt4/theoremqa_theorems.yesno_score.jsonl filter=lfs diff=lfs merge=lfs -text
 ./evaluation/input/BRIGHT_reasonir_gpt4/theoremqa_theorems.yesno_score.jsonl
+./evaluation/rank_results/BRIGHT/tfrank-sft-grpo-qwen3-8B-nothink/theoremqa_questions.rearanker_msmarco_only_grpo-qwen3-8B_pointwise_no_think.jsonl
+./evaluation/rank_results/BRIGHT_reasonir_gpt4/tfrank-sft-grpo-qwen3-8B-nothink/theoremqa_questions.rearanker_msmarco_only_grpo-qwen3-8B_pointwise_no_think.jsonl
+./evaluation/input/BRIGHT/theoremqa_questions.yesno_score.jsonl
+./evaluation/input/BRIGHT/leetcode.yesno_score.jsonl
+./evaluation/input/BRIGHT/earth_science.yesno_score.jsonl
+./evaluation/input/BRIGHT/psychology.yesno_score.jsonl
+./evaluation/input/BRIGHT/economics.yesno_score.jsonl
+./evaluation/input/BRIGHT/robotics.yesno_score.jsonl
+./evaluation/input/BRIGHT/sustainable_living.yesno_score.jsonl
+./evaluation/input/BRIGHT/pony.yesno_score.jsonl
+./evaluation/input/BRIGHT/aops.yesno_score.jsonl
+./evaluation/input/BRIGHT/biology.yesno_score.jsonl
+./evaluation/input/BRIGHT/stackoverflow.yesno_score.jsonl
+./evaluation/input/BRIGHT/theoremqa_theorems.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/theoremqa_questions.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/leetcode.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/earth_science.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/psychology.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/economics.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/robotics.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/sustainable_living.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/pony.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/aops.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/biology.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/stackoverflow.yesno_score.jsonl
+./evaluation/input/BRIGHT_reasonir_gpt4/theoremqa_theorems.yesno_score.jsonl
+.git/lfs/objects/3e/49/3e494a9facc5f674724983eff1ef0c3503da99c555d04b1505049fe7967b81d3 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/3e/49/3e494a9facc5f674724983eff1ef0c3503da99c555d04b1505049fe7967b81d3
+.git/lfs/objects/03/6e/036ea308adc4d54d2d9e8af7332d2ed2a890bae2e0a2d02b2f71f2eba6746bb3 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/03/6e/036ea308adc4d54d2d9e8af7332d2ed2a890bae2e0a2d02b2f71f2eba6746bb3
+.git/lfs/objects/32/74/3274ce47d69c0995ca31b68ab6be6554915e895b95635f8893481514d65c55a4 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/32/74/3274ce47d69c0995ca31b68ab6be6554915e895b95635f8893481514d65c55a4
+.git/lfs/objects/35/02/3502251d1389a44a6633ae2c2c922150e69ed99a2a36cb50b101d6cf07ca3e86 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/35/02/3502251d1389a44a6633ae2c2c922150e69ed99a2a36cb50b101d6cf07ca3e86
+.git/lfs/objects/67/09/670936b44b86bdd82288ddfa481458934d6e4cf1ca41dedd512ccfd8cf096f05 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/67/09/670936b44b86bdd82288ddfa481458934d6e4cf1ca41dedd512ccfd8cf096f05
+.git/lfs/objects/05/c3/05c3e39775db78a5e170a4071f3ed507789ccb759ee67aa0357f79de519c4bed filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/05/c3/05c3e39775db78a5e170a4071f3ed507789ccb759ee67aa0357f79de519c4bed
+.git/lfs/objects/df/dc/dfdce77b105a7c10865fbd637a1034f8b40405510e99a8917a8df59fab4a918a filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/df/dc/dfdce77b105a7c10865fbd637a1034f8b40405510e99a8917a8df59fab4a918a
+.git/lfs/objects/fc/cf/fccf547101481ba50b5b5f1c15be367f90525a737f8c1a7b16c8028f95088726 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/fc/cf/fccf547101481ba50b5b5f1c15be367f90525a737f8c1a7b16c8028f95088726
+.git/lfs/objects/fe/bf/febf28a81f00e16b377cbf8c196d801f96b78fa28db364b3d6b0a50e4392834c filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/fe/bf/febf28a81f00e16b377cbf8c196d801f96b78fa28db364b3d6b0a50e4392834c
+.git/lfs/objects/20/3e/203e6e75b982f7ae4a16e0b675ecc560925d93be3feb7367ca53616b0415b0ca filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/20/3e/203e6e75b982f7ae4a16e0b675ecc560925d93be3feb7367ca53616b0415b0ca
+.git/lfs/objects/7d/5e/7d5e84a4852cefdade00e8d36dbb7b80a740ddbbef7a8df810caad758e81b85a filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/7d/5e/7d5e84a4852cefdade00e8d36dbb7b80a740ddbbef7a8df810caad758e81b85a
+.git/lfs/objects/7c/11/7c1145f794685ed49415cfb49072f0c97cdadba88a19282024210bbd167316d0 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/7c/11/7c1145f794685ed49415cfb49072f0c97cdadba88a19282024210bbd167316d0
+.git/lfs/objects/28/fc/28fc2997f8242a898661933d8e0d0ef08c41f27eb3eb6810bb243997f3aeb60c filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/28/fc/28fc2997f8242a898661933d8e0d0ef08c41f27eb3eb6810bb243997f3aeb60c
+.git/lfs/objects/4d/5a/4d5a5a8eaa4bdbd371a7193efb164b1c7a1842bd90a54aa3d99e8c3d573bb260 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/4d/5a/4d5a5a8eaa4bdbd371a7193efb164b1c7a1842bd90a54aa3d99e8c3d573bb260
+.git/lfs/objects/6b/5f/6b5faa5a74830d150bf7ed6b59f8a3fe060051a58062fab64b9366ddd5e98d0b filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/6b/5f/6b5faa5a74830d150bf7ed6b59f8a3fe060051a58062fab64b9366ddd5e98d0b
+.git/lfs/objects/96/9b/969b48c28019e0010e64eaa510306e00465e9c0c6cfe3c8e47d60c204f280672 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/96/9b/969b48c28019e0010e64eaa510306e00465e9c0c6cfe3c8e47d60c204f280672
+.git/lfs/objects/6d/4e/6d4e324743a710631c2622c0c5ab9f887b0a5429a9ab3126e2227216ff8d8669 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/6d/4e/6d4e324743a710631c2622c0c5ab9f887b0a5429a9ab3126e2227216ff8d8669
+.git/lfs/objects/0f/96/0f96d9210fbfe21dfeaf3ca7c80c07bf47631cb030eafc308a4fe5e5bef8a432 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/0f/96/0f96d9210fbfe21dfeaf3ca7c80c07bf47631cb030eafc308a4fe5e5bef8a432
+.git/lfs/objects/dd/8f/dd8fbbf894ff81c919f534402b80e184a05536fb47406895af812af8ac89e5fb filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/dd/8f/dd8fbbf894ff81c919f534402b80e184a05536fb47406895af812af8ac89e5fb
+.git/lfs/objects/e6/5a/e65a48e784ae4096ce7a4e0bfc21483c8c47250d8cf79eb0cc95ef7e8fc1d2ca filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/e6/5a/e65a48e784ae4096ce7a4e0bfc21483c8c47250d8cf79eb0cc95ef7e8fc1d2ca
+.git/lfs/objects/c5/9b/c59b0298fa717e90300a0abf40c997d285818161e351fd53f1cfe618f410d2c3 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/c5/9b/c59b0298fa717e90300a0abf40c997d285818161e351fd53f1cfe618f410d2c3
+.git/lfs/objects/cb/7c/cb7c5422a07efbf661e9b54b555d348370736b301ebf2eccee0f32671de60a9e filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/cb/7c/cb7c5422a07efbf661e9b54b555d348370736b301ebf2eccee0f32671de60a9e
+.git/lfs/objects/4f/97/4f973cf32dce2f35ff9d2bbc35404d4bede3e5b3c35a96d78fc5363a40ef8a7f filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/4f/97/4f973cf32dce2f35ff9d2bbc35404d4bede3e5b3c35a96d78fc5363a40ef8a7f
+.git/lfs/objects/85/16/8516d1873d0e88e8ea781daa48404f5e7f4980b889cde9bb57b8c91719dbf096 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/85/16/8516d1873d0e88e8ea781daa48404f5e7f4980b889cde9bb57b8c91719dbf096
+.git/lfs/objects/47/ab/47abdef038dcb52bc7cda74a207f67872a315e24fa2fcb1c8add2d21837b23dd filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/47/ab/47abdef038dcb52bc7cda74a207f67872a315e24fa2fcb1c8add2d21837b23dd
+.git/lfs/objects/7a/75/7a7581d5d95dc9d6707c3b0839a2920d46d5f57bd5149fd1ff3ae14513aa30f0 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/7a/75/7a7581d5d95dc9d6707c3b0839a2920d46d5f57bd5149fd1ff3ae14513aa30f0
+.git/lfs/objects/14/e6/14e67cae1f4544cc28bd85509cbe2302dbdbc54e797b44b98bdfaf5862b9d529 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/objects/14/e6/14e67cae1f4544cc28bd85509cbe2302dbdbc54e797b44b98bdfaf5862b9d529
+.git/lfs/tmp/2426427776 filter=lfs diff=lfs merge=lfs -text
+./.git/lfs/tmp/2426427776

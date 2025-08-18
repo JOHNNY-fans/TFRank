@@ -14,8 +14,12 @@ We propose a training framework **TFRank** for small-scale LLMs that enables **e
 ## Resources
 
 ### 📦 Models
+| Model | Description |
+|:---------|:------------|
+| [TFRank-GRPO-Qwen3-0.6B](https://huggingface.co/Johnnyfans/TFRank-GRPO-Qwen3-0.6B) | Built on Qwen3 0.6B and trained on full GRPO data. Efficiency oriented (high throughput, low latency). Suited for large scale online reranking and high concurrency. |
+| [TFRank-SFT-GRPO-Qwen3-8B](https://huggingface.co/Johnnyfans/TFRank-SFT-GRPO-Qwen3-8B) | Built on Qwen3 8B with full SFT plus a small set of GRPO examples. Quality oriented. Suited for offline evaluation and applications that are sensitive to ranking quality. |
 
-*To be released soon...*
+Additional, stronger models will be released progressively. *To be released soon...*
 
 ### 📂 Datasets
 

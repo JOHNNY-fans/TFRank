@@ -29,10 +29,16 @@ We provide high-quality datasets constructed from multiple sources, integrating 
 ---
 
 ## Performance
-
 <div align="center">
   <img src="figure/size_efficiency_performance.png" width="720px">
+  <p><em>
+    Size and efficiency trade-offs for ranking performance on the BRIGHT benchmark.  
+    (a) NDCG@10 versus model size for different ranker families;  
+    (b) NDCG@10 versus processed queries per hour (efficiency).  
+    All TFRank models are trained on the Qwen3 series.
+  </em></p>
 </div>
+
 
 ---
 

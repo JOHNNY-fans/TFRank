@@ -6,7 +6,7 @@ Welcome to **TFRank** 🎉
 We propose a training framework **TFRank** for small-scale LLMs that enables **efficient and effective pointwise reasoning ranking** *without explicit reasoning output at inference*.
 
 <div align="center">
-  <img src="figure/framework.png" width="720px">
+  <img src="figure/framework.png" width="1080px">
 </div>
 
 ---

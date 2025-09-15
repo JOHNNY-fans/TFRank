@@ -233,12 +233,33 @@ def build_completion_prompt(
             )
     return completion_prompt, len(tokenizer.encode(completion_prompt))
 
-def deal(item, model_name, file_path, tokenizer, system_prompt, client, max_model_tokens, max_new_tokens_init, temperature=0., think_mode=True, reasoning_model=True, debug=False):
-    max_try_retry = 1 if debug else 8
+def deal(
+    item,
+    model_name,
+    file_path,
+    tokenizer,
+    system_prompt,
+    client,
+    max_model_tokens,
+    max_new_tokens_init,
+    temperature=0.0,
+    think_mode=True,
+    reasoning_model=True,
+    debug=False
+):
+    max_try_retry = 1 if debug else 5
     max_tokens = max_model_tokens
     max_new_tokens = max_new_tokens_init
-    try_num = 0
-    while(True):
+
+    def _fill_fail(_item, resp_text='error'):
+        _item['predicted_label_max'] = 'error'
+        _item['predicted_label_avg'] = 0.5
+        _item['predicted_yesno'] = 'error'
+        _item['predicted_yesno_score'] = 0.5
+        _item['response'] = resp_text
+        return _item
+
+    for attempt in range(1, max_try_retry + 1):
         try:
             completion_prompt, prompt_token = build_completion_prompt(
                 input_text=item['input'],
@@ -248,8 +269,9 @@ def deal(item, model_name, file_path, tokenizer, system_prompt, client, max_mode
                 reserved_tokens=max_new_tokens,
                 think_mode=think_mode,
                 reasoning_model=reasoning_model,
-                try_num=try_num,
+                try_num=attempt - 1,
             )
+
             response_stream = call_vllm_api(
                 client,
                 task="completion",
@@ -260,6 +282,8 @@ def deal(item, model_name, file_path, tokenizer, system_prompt, client, max_mode
                 extra_body={"logprobs": 20}
             )
             response_chunks = list(response_stream)
+
+            # 可选：连通性/解码 sanity check
             buffer_tokens = []
             for chunk in response_chunks:
                 if chunk[0] != "choices":
@@ -269,49 +293,87 @@ def deal(item, model_name, file_path, tokenizer, system_prompt, client, max_mode
                 tokens = choice.logprobs.tokens
                 if tokens:
                     buffer_tokens.append(tokens[0])
-                    text_so_far = tokenizer.convert_tokens_to_string(buffer_tokens)
+                    _ = tokenizer.convert_tokens_to_string(buffer_tokens)
                 break
+
             tmp_res = get_next_token_probs(response_chunks, tokenizer, think_mode=think_mode, debug=debug)
-            if tmp_res is None and try_num!= max_try_retry:
-                try_num +=1
-                continue
-            if try_num==max_try_retry and tmp_res is not None:
-                label_logits_result, yesno_logits_result, response = tmp_res
-                if debug:
-                    print(response)
-                item['predicted_label_max'] = max(label_logits_result, key=label_logits_result.get)
-                weighted_score = sum([i * p for i, p in label_logits_result.items()])
-                item['predicted_label_avg'] = weighted_score
-                item['predicted_yesno'] = max(yesno_logits_result, key=yesno_logits_result.get)
-                item['predicted_yesno_score'] = yesno_logits_result.get('yes', 0)
-                item['response'] = response + ')'
-            elif try_num==max_try_retry:
-                item['predicted_label_max'] = 'error'
-                item['predicted_label_avg'] = 0.5
-                item['predicted_yesno'] = 'error'
-                item['predicted_yesno_score'] = 0.5
-                item['response'] = 'error'
+
+            # 解析失败 -> 还有机会则重试；否则记失败并退出
+            if tmp_res is None:
+                if attempt < max_try_retry and not debug:
+                    continue
+                else:
+                    _fill_fail(item)
             else:
-                try_num+=1
-                continue
+                label_logits_result, yesno_logits_result, response = tmp_res
+
+                if debug:
+                    print(f"[DEBUG][attempt {attempt}] response:\n{response}")
+                    # 调试模式下直接退出（不写文件）
+                    break
+
+                # 处理 label（可能为空）
+                if label_logits_result:
+                    try:
+                        item['predicted_label_max'] = max(label_logits_result, key=label_logits_result.get)
+                        # 若 label 是 int -> 期望值；若是 str 可自行改成你的需要
+                        weighted_score = sum(float(k) * float(p) for k, p in label_logits_result.items())
+                        item['predicted_label_avg'] = weighted_score
+                    except Exception:
+                        # 兜底：结构异常时给默认
+                        item['predicted_label_max'] = 'error'
+                        item['predicted_label_avg'] = 0.5
+                else:
+                    item['predicted_label_max'] = 'error'
+                    item['predicted_label_avg'] = 0.5
+
+                # yes/no 概率
+                pred_yesno = max(yesno_logits_result, key=yesno_logits_result.get)
+                item['predicted_yesno'] = pred_yesno
+                item['predicted_yesno_score'] = yesno_logits_result.get(pred_yesno, 0.0)
+
+                item['response'] = response + ')'
+
+            # 写入 & 退出（debug=False 才写）
             if not debug:
                 with open(file_path, "a+", encoding="utf8") as f:
                     f.write(json.dumps(item, ensure_ascii=False) + "\n")
                     f.flush()
-                max_tokens = max_new_tokens_init
-                max_new_tokens = max_new_tokens_init
                 break
-            try_num+=1
+
         except Exception as e:
-            str_e = str(e)
-            if 'InvalidRequestError' in str_e:
-                if 'maximum context' in str_e:
-                    max_new_tokens += 1024
-                continue
-            elif 'JSONDecodeError' in str_e:
-                pass
+            msg = str(e)
+            # 上下文超限：扩大 reserved tokens 再试
+            if 'InvalidRequestError' in msg and 'maximum context' in msg:
+                max_new_tokens += 1024
+                if attempt < max_try_retry:
+                    continue
+                else:
+                    _fill_fail(item, resp_text=f'error: {msg}')
+                    if not debug:
+                        with open(file_path, "a+", encoding="utf8") as f:
+                            f.write(json.dumps(item, ensure_ascii=False) + "\n")
+                            f.flush()
+                    break
+            # 可重试错误：JSON 解码
+            elif 'JSONDecodeError' in msg:
+                if attempt < max_try_retry:
+                    continue
+                else:
+                    _fill_fail(item, resp_text=f'error: {msg}')
+                    if not debug:
+                        with open(file_path, "a+", encoding="utf8") as f:
+                            f.write(json.dumps(item, ensure_ascii=False) + "\n")
+                            f.flush()
+                    break
             else:
                 traceback.print_exc()
+                _fill_fail(item, resp_text=f'error: {msg}')
+                if not debug:
+                    with open(file_path, "a+", encoding="utf8") as f:
+                        f.write(json.dumps(item, ensure_ascii=False) + "\n")
+                        f.flush()
+                break
 
 def list_jsonl_files(dir_path):
     p = Path(dir_path)
@@ -349,6 +411,7 @@ def main():
             L = f.readlines()
         input_data = [json.loads(i) for i in L]
         task_type = input_data[0]['task_type']
+        predict_way = input_data[0]['predict_way']
         file_path = os.path.join(result_dir, think_type, f"{dataset_name}.{model_short_name}_{task_type}_{think_type}.jsonl")
         if not os.path.exists(file_path):
             with open(file_path, 'w') as f:

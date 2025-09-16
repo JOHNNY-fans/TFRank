@@ -330,7 +330,7 @@ def deal(
                 # yes/no 概率
                 pred_yesno = max(yesno_logits_result, key=yesno_logits_result.get)
                 item['predicted_yesno'] = pred_yesno
-                item['predicted_yesno_score'] = yesno_logits_result.get(pred_yesno, 0.0)
+                item['predicted_yesno_score'] = yesno_logits_result.get('yes', 0.0)
 
                 item['response'] = response + ')'
 

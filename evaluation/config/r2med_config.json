@@ -1,0 +1,15 @@
+{
+    "order": [
+      "Biology", "Bioin.", "MedS.", "MedE.", "MedD.", "PMCT.", "PMCC.", "IIYiC."
+    ],
+    "name_map": {
+      "Biology": "Biology",
+      "Bioin.": "Bioinformatics",
+      "MedS.": "Medical-Sciences",
+      "MedE.": "MedXpertQA-Exam",
+      "MedD.": "MedQA-Diag",
+      "PMCT.": "PMC-Treatment",
+      "PMCC.": "PMC-Clinical",
+      "IIYiC.": "IIYi-Clinical"
+    }
+  }

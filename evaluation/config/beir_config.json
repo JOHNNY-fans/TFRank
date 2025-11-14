@@ -1,0 +1,14 @@
+{
+    "order": ["ArguA","ClimF","DBP","FiQA","NFCorp","SciDoc","SciFact","Touche","TrecC"],
+    "name_map": {
+        "ArguA": "arguana",
+        "ClimF": "climate-fever",
+        "DBP": "dbpedia-entity",
+        "FiQA": "fiqa",
+        "NFCorp": "nfcorpus",
+        "SciDoc": "scidocs",
+        "SciFact": "scifact",
+        "Touche": "webis-touche2020",
+        "TrecC": "trec-covid"
+    }
+  }

@@ -16,7 +16,9 @@ We propose a training framework **TFRank** for small-scale LLMs that enables **e
 ### 📦 Models
 | Model | Description |
 |:---------|:------------|
-| [TFRank-SFT-GRPO-Qwen3-8B](https://huggingface.co/Johnnyfans/TFRank-SFT-GRPO-Qwen3-8B) | Built on Qwen3 8B with full SFT plus a small set of GRPO examples. Quality oriented. Suited for offline evaluation and applications that are sensitive to ranking quality. |
+| [TFRank-SFT-Qwen2.5-7B-Instruct](https://huggingface.co/Johnnyfans/TFRank-SFT-Qwen2.5-7B-Instruct) | Built on Qwen2.5-7B-Instruct with full SFT data. |
+| [TFRank-SFT-Qwen3-8B](https://huggingface.co/Johnnyfans/TFRank-SFT-Qwen3-8B) | Built on Qwen3 8B with full SFT data.|
+| [TFRank-SFT-GRPO-Qwen3-8B](https://huggingface.co/Johnnyfans/TFRank-SFT-GRPO-Qwen3-8B) | Built on Qwen3 8B with full SFT plus a small set of GRPO data.|
 | [TFRank-GRPO-Qwen3-0.6B](https://huggingface.co/Johnnyfans/TFRank-GRPO-Qwen3-0.6B) | Built on Qwen3 0.6B and trained on full GRPO data. Efficiency oriented (high throughput, low latency). Suited for large scale online reranking and high concurrency. |
 | [TFRank-GRPO-Qwen3-1.7B](https://huggingface.co/Johnnyfans/TFRank-GRPO-Qwen3-1.7B) | Built on Qwen3 1.7B and trained on full GRPO data. |
 | [TFRank-GRPO-Qwen3-4B](https://huggingface.co/Johnnyfans/TFRank-GRPO-Qwen3-4B) | Built on Qwen3 4B and trained on full GRPO data. |

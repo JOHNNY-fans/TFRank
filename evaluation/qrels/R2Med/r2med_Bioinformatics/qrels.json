@@ -1,0 +1,383 @@
+{
+    "1": {
+        "Characterization_Of_The_Role_Of_Hexamer_Aguaaa_49": 1,
+        "Characterization_Of_The_Role_Of_Hexamer_Aguaaa_5": 1,
+        "Characterization_Of_The_Role_Of_Hexamer_Aguaaa_55": 1,
+        "Characterization_Of_The_Role_Of_Hexamer_Aguaaa_57": 1,
+        "Characterization_Of_The_Role_Of_Hexamer_Aguaaa_63": 1,
+        "Characterization_Of_The_Role_Of_Hexamer_Aguaaa_64": 1,
+        "Characterization_Of_The_Role_Of_Hexamer_Aguaaa_72": 1,
+        "Requirement_Of_The_Poly(A)_Tail_1": 1
+    },
+    "2": {
+        "Data_File_Formats_44": 1,
+        "Data_File_Formats_46": 1,
+        "Data_File_Formats_47": 1,
+        "Data_File_Formats_48": 1
+    },
+    "3": {
+        "Accurate_Whole_Human_Genome_Sequencing_13": 1,
+        "Accurate_Whole_Human_Genome_Sequencing_29": 1,
+        "Accurate_Whole_Human_Genome_Sequencing_30": 1
+    },
+    "7": {
+        "Magic:_A_Diffusion-Based_Imputation_12": 1,
+        "Magic:_A_Diffusion-Based_Imputation_16": 1,
+        "Magic:_A_Diffusion-Based_Imputation_56": 1,
+        "Magic:_A_Diffusion-Based_Imputation_67": 1,
+        "Magic:_A_Diffusion-Based_Imputation_89": 1,
+        "Magic:_A_Diffusion-Based_Imputation_90": 1,
+        "Revealing_The_Vectors_Of_Cellular_63": 1
+    },
+    "9": {
+        "What_The_Fpkm_2": 1,
+        "What_The_Fpkm_5": 1,
+        "What_The_Fpkm_6": 1
+    },
+    "10": {
+        "Brentp_Peddy_0": 1,
+        "Brentp_Peddy_1": 1,
+        "Brentp_Peddy_6": 1
+    },
+    "11": {
+        "Fastq_Parser_In_C_0": 1,
+        "Fastq_Parser_In_C_2": 1
+    },
+    "12": {
+        "Art:_A_Next-Generation_0": 1,
+        "Art:_A_Next-Generation_3": 1,
+        "Art:_A_Next-Generation_4": 1
+    },
+    "13": {
+        "Pomegranate_0": 1
+    },
+    "14": {
+        "Jellyfish_Mer_Counter_0": 1
+    },
+    "15": {
+        "Rna_Alignment_Editor_4": 1,
+        "Rna_Alignment_Editor_5": 1
+    },
+    "16": {
+        "Bioinformatics_Format_Specimens_0": 1
+    },
+    "17": {
+        "Normalization_Of_Rna-Seq_Data_10": 1,
+        "Normalization_Of_Rna-Seq_Data_13": 1,
+        "Normalization_Of_Rna-Seq_Data_31": 1,
+        "Normalization_Of_Rna-Seq_Data_32": 1,
+        "Normalization_Of_Rna-Seq_Data_43": 1,
+        "Normalization_Of_Rna-Seq_Data_44": 1
+    },
+    "18": {
+        "An_Algorithm_For_Fast_Preranked_Gene_18": 1,
+        "An_Algorithm_For_Fast_Preranked_Gene_3": 1
+    },
+    "19": {
+        "Qualimap_0": 1,
+        "Qualimap_1": 1
+    },
+    "20": {
+        "E-Utilities_On_The_Unix_0": 1,
+        "E-Utilities_On_The_Unix_3": 1
+    },
+    "21": {
+        "Pisces:_A_Protein_Sequence_1": 1
+    },
+    "22": {
+        "Plink2_10": 1,
+        "Plink2_11": 1,
+        "Plink2_12": 1,
+        "Plink2_7": 1,
+        "Plink2_9": 1
+    },
+    "23": {
+        "Evaluating_Fast_Maximum_12": 1,
+        "Evaluating_Fast_Maximum_37": 1,
+        "Evaluating_Fast_Maximum_41": 1,
+        "Evaluating_Fast_Maximum_45": 1,
+        "Iq-Tree_18": 1,
+        "Iq-Tree_9": 1
+    },
+    "24": {
+        "Pyfaidx_0": 1,
+        "Pyfaidx_8": 1
+    },
+    "25": {
+        "Sam_Format_6": 1
+    },
+    "26": {
+        "Paralogs_And_Homologs_2": 1
+    },
+    "27": {
+        "Coverage_Read_Depth_1": 1
+    },
+    "28": {
+        "Reproducible_Computational_Research_11": 1,
+        "Reproducible_Computational_Research_14": 1,
+        "Reproducible_Computational_Research_16": 1,
+        "Reproducible_Computational_Research_17": 1,
+        "Reproducible_Computational_Research_25": 1,
+        "Reproducible_Computational_Research_9": 1
+    },
+    "30": {
+        "Smrt_Sequencing_Data_1": 1,
+        "Smrt_Sequencing_Data_14": 1,
+        "Smrt_Sequencing_Data_32": 1,
+        "Smrt_Sequencing_Data_48": 1,
+        "Smrt_Sequencing_Data_6": 1,
+        "Smrt_Sequencing_Data_7": 1
+    },
+    "31": {
+        "Introduction_To_Loomr_0": 1,
+        "Introduction_To_Loomr_1": 1,
+        "Introduction_To_Loomr_20": 1,
+        "Introduction_To_Loomr_3": 1,
+        "Introduction_To_Loomr_4": 1,
+        "Introduction_To_Loomr_9": 1,
+        "Loompy_0": 1,
+        "Loompy_1": 1
+    },
+    "32": {
+        "Bedtools2_0": 1
+    },
+    "33": {
+        "Single-Cell_Rna-Seq_Data_10": 1,
+        "Single-Cell_Rna-Seq_Data_11": 1,
+        "Single-Cell_Rna-Seq_Data_12": 1,
+        "Single-Cell_Rna-Seq_Data_14": 1,
+        "Single-Cell_Rna-Seq_Data_15": 1,
+        "Single-Cell_Rna-Seq_Data_22": 1,
+        "Single-Cell_Rna-Seq_Data_28": 1,
+        "Single-Cell_Rna-Seq_Data_34": 1
+    },
+    "34": {
+        "Bedtools_Genomecov_4": 1,
+        "Bedtools_Genomecov_6": 1,
+        "Bedtools_Genomecov_8": 1,
+        "Bedtools_Genomecov_9": 1
+    },
+    "35": {
+        "Remark_18": 1
+    },
+    "38": {
+        "Jellyfish_2_User_Guide_0": 1,
+        "Jellyfish_2_User_Guide_1": 1
+    },
+    "39": {
+        "Genomescope_4": 1
+    },
+    "40": {
+        "Iupac_Nucleotide_Code_0": 1
+    },
+    "41": {
+        "Vcf2Bed_0": 1,
+        "Vcf2Bed_4": 1,
+        "Vcf2Bed_5": 1,
+        "Vcf2Bed_7": 1
+    },
+    "42": {
+        "Call_Format_And_Vcftools_6": 1
+    },
+    "44": {
+        "Allele_0": 1
+    },
+    "45": {
+        "Blood_Genomic_Studies_11": 1,
+        "Blood_Genomic_Studies_12": 1,
+        "Blood_Genomic_Studies_14": 1,
+        "Blood_Genomic_Studies_36": 1,
+        "Blood_Genomic_Studies_6": 1,
+        "Cellmix_10": 1,
+        "Cellmix_4": 1
+    },
+    "47": {
+        "Gff3_10": 1,
+        "Gff3_15": 1,
+        "Gff3_8": 1,
+        "Gff3_9": 1
+    },
+    "48": {
+        "Assembly_Of_Long_Error-Prone_0": 1,
+        "Assembly_Of_Long_Error-Prone_1": 1,
+        "Assembly_Of_Long_Error-Prone_15": 1,
+        "Assembly_Of_Long_Error-Prone_3": 1,
+        "Assembly_Of_Long_Error-Prone_71": 1,
+        "Genomescope_13": 1,
+        "Genomescope_3": 1
+    },
+    "49": {
+        "Chebi_0": 1
+    },
+    "50": {
+        "Expands_0": 1,
+        "Expands_1": 1,
+        "Expands_5": 1,
+        "Expands_7": 1
+    },
+    "51": {
+        "I-Tasser_0": 1,
+        "I-Tasser_2": 1,
+        "I-Tasser_3": 1,
+        "I-Tasser_4": 1
+    },
+    "52": {
+        "Biopython_0": 1
+    },
+    "53": {
+        "Emboss_Sourceforge_2": 1
+    },
+    "54": {
+        "Samtools_Bcftools_42": 1
+    },
+    "55": {
+        "Easyfig_0": 1
+    },
+    "56": {
+        "Pysam_Developers_0": 1
+    },
+    "58": {
+        "Parsing_Gff_Files_0": 1,
+        "Parsing_Gff_Files_5": 1
+    },
+    "59": {
+        "Go_With_R_Packages_12": 1,
+        "Go_With_R_Packages_4": 1
+    },
+    "60": {
+        "Filter_Cell_Barcodes_2": 1,
+        "Filter_Cell_Barcodes_5": 1
+    },
+    "61": {
+        "Higlass_0": 1,
+        "Juicebox_0": 1
+    },
+    "62": {
+        "Mummer3_0": 1,
+        "Mummer3_1": 1
+    },
+    "64": {
+        "Fqfeeder_1": 1
+    },
+    "65": {
+        "Vcfv4.3_2": 1,
+        "Vcfv4.3_3": 1
+    },
+    "67": {
+        "Ts_Oligos_3": 1
+    },
+    "69": {
+        "Plot_Regions_0": 1,
+        "Plot_Regions_1": 1
+    },
+    "73": {
+        "Consensus_Clustering_Of_Single-Cell_11": 1,
+        "Consensus_Clustering_Of_Single-Cell_16": 1,
+        "Consensus_Clustering_Of_Single-Cell_18": 1,
+        "Consensus_Clustering_Of_Single-Cell_27": 1,
+        "Consensus_Clustering_Of_Single-Cell_29": 1,
+        "Consensus_Clustering_Of_Single-Cell_4": 1,
+        "Consensus_Clustering_Of_Single-Cell_5": 1,
+        "Consensus_Clustering_Of_Single-Cell_9": 1
+    },
+    "74": {
+        "Hgliftover_0": 1
+    },
+    "76": {
+        "Illumina_Sequencing_Data_8": 1
+    },
+    "77": {
+        "Pseudoautosomal_Region_0": 1,
+        "Pseudoautosomal_Region_1": 1,
+        "Pseudoautosomal_Region_2": 1,
+        "Pseudoautosomal_Region_3": 1
+    },
+    "78": {
+        "Human_Cell_Atlas_Data_1": 1
+    },
+    "79": {
+        "Illumina_Humanmethylationepic_11": 1,
+        "Illumina_Humanmethylationepic_14": 1,
+        "Illumina_Humanmethylationepic_15": 1,
+        "Illumina_Humanmethylationepic_16": 1,
+        "Illumina_Humanmethylationepic_26": 1
+    },
+    "81": {
+        "Extending_Reference_0": 1,
+        "Extending_Reference_10": 1,
+        "Extending_Reference_12": 1,
+        "Extending_Reference_2": 1,
+        "Extending_Reference_8": 1,
+        "Extending_Reference_9": 1
+    },
+    "83": {
+        "Gene_Expression_Omnibus_0": 1,
+        "Gene_Expression_Omnibus_1": 1,
+        "Gene_Expression_Omnibus_3": 1,
+        "Gene_Expression_Omnibus_4": 1,
+        "Gene_Expression_Omnibus_5": 1,
+        "Gene_Expression_Omnibus_6": 1,
+        "Gene_Expression_Omnibus_7": 1
+    },
+    "87": {
+        "The_Arabidopsis_Information_Resource_0": 1
+    },
+    "88": {
+        "Htsfile_0": 1
+    },
+    "90": {
+        "Std_Bad_Alloc_1": 1,
+        "Std_Bad_Alloc_5": 1
+    },
+    "91": {
+        "Catenin_Dependent_0": 1,
+        "Th2-Type_Responses_0": 1,
+        "Th2-Type_Responses_3": 1
+    },
+    "92": {
+        "Minimap2_Faq_0": 1
+    },
+    "93": {
+        "Blast_Help_0": 1,
+        "Blast_Help_1": 1
+    },
+    "94": {
+        "Rna-Seq_Data_With_Deseq2_1": 1,
+        "Rna-Seq_Data_With_Deseq2_10": 1,
+        "Rna-Seq_Data_With_Deseq2_16": 1,
+        "Rna-Seq_Data_With_Deseq2_17": 1,
+        "Rna-Seq_Data_With_Deseq2_33": 1,
+        "Rna-Seq_Data_With_Deseq2_34": 1,
+        "Rna-Seq_Data_With_Deseq2_62": 1
+    },
+    "96": {
+        "Sequence_Identifiers_1": 1,
+        "Sequence_Identifiers_2": 1,
+        "Sequence_Identifiers_6": 1
+    },
+    "99": {
+        "Single-Cell_Differential_Expression_10": 1,
+        "Single-Cell_Differential_Expression_13": 1,
+        "Single-Cell_Differential_Expression_14": 1,
+        "Single-Cell_Differential_Expression_16": 1,
+        "Single-Cell_Differential_Expression_6": 1,
+        "Single-Cell_Differential_Expression_7": 1
+    },
+    "101": {
+        "Minimap2_0": 1,
+        "Minimap2_5": 1
+    },
+    "102": {
+        "Process_Substitution_0": 1
+    },
+    "103": {
+        "Hiseq_4000_16": 1,
+        "Hiseq_4000_2": 1,
+        "Hiseq_4000_7": 1,
+        "Illumina_Index-Swapping_0": 1
+    },
+    "104": {
+        "Pysbol2_3": 1,
+        "Pysbol2_5": 1
+    }
+}

@@ -15,7 +15,7 @@ We propose a training framework **TFRank** for small-scale LLMs that enables **e
 
 ### 📦 Models
 | Model | Description |
-|:---------|:------------|
+|:-----------|:------------|
 | [TFRank-SFT-Qwen2.5-7B-Instruct](https://huggingface.co/Johnnyfans/TFRank-SFT-Qwen2.5-7B-Instruct) | Built on Qwen2.5-7B-Instruct with full SFT data. |
 | [TFRank-SFT-Qwen3-8B](https://huggingface.co/Johnnyfans/TFRank-SFT-Qwen3-8B) | Built on Qwen3 8B with full SFT data.|
 | [TFRank-SFT-GRPO-Qwen3-8B](https://huggingface.co/Johnnyfans/TFRank-SFT-GRPO-Qwen3-8B) | Built on Qwen3 8B with full SFT plus a small set of GRPO data.|

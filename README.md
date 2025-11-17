@@ -11,6 +11,18 @@ We propose a training framework **TFRank** for small-scale LLMs that enables **e
 
 ---
 
+## 📦 Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/JOHNNY-fans/TFRank.git
+cd TFRank
+pip install -r requirements.txt
+```
+
+---
+
 ## Resources
 
 ### 📦 Models
@@ -48,10 +60,96 @@ We provide high-quality datasets constructed from multiple sources, integrating 
   </em></p>
 </div>
 
+---
+
+## 🚀 Inference Quick Start
+
+Below are two minimal examples demonstrating how to run TFRank for query–document relevance scoring.
+
+### 1️⃣ Start a vLLM Server
+
+```bash
+python -m vllm.entrypoints.openai.api_server \
+    --model /path/to/your/tfrank_checkpoint \
+    --served-model-name rele_pointwise \
+    --port 8113
+```
 
 ---
 
-## Notes
+### 2️⃣ Initialize the Ranker
 
-We have released **training and evaluation code** along with **partial data samples**.
-The complete training data and models will be made publicly available in the open-source community **after the double-blind review process**, ensuring full compliance with anonymity requirements.
+```python
+from evaluation.minimal_ranker import TFRankDemoRanker
+
+ranker = TFRankDemoRanker(
+    model_name="/path/to/your/tfrank_checkpoint",
+    api_base="http://localhost:8113/v1",
+    api_key="any-string",          # vLLM usually ignores this
+    think_mode=False,              # set True to enable /think reasoning
+    reasoning_model=False,         # set True if using a reasoning-head model
+)
+```
+
+---
+
+### 📝 Example 1 — Completely Irrelevant Document
+
+```python
+query = "what nano means"
+
+document = "What does nano mean? Nano means very, very small. When it comes to making your body work, nano-materials are very important. A nanometre is one millionth of a millimetre. Your fingernail is about one millimetre thick. There are a lot of nano-materials making up your finger nail! Nanotechnology scientists move atoms and molecules around to make amazing new technologies. Nanotechnology is already in products like sunscreen."
+
+
+final_score, fg_score, yes_score, response = ranker.score(query, document)
+
+print("Final relevance score (0–1):", final_score) # 0.9997
+print("Fine-grained score (normalized):", fg_score)
+print("Yes-probability:", yes_score)
+print("\nModel response:\n", response) # yes(4)
+```
+
+---
+
+### 📝 Example 2 — Highly Relevant Document
+
+```python
+query = "what is a musket?"
+
+document = "8 Unusual Civil War Weapons You might think the Civil War was only fought with muskets, bayonets and cannons, but those weren’t the only deadly weapons to haunt the battlefields of the 1860s."
+
+
+final_score, fg_score, yes_score, response = ranker.score(query, document)
+
+print("Final relevance score (0–1):", final_score) # 0.1228
+print("Fine-grained score (normalized):", fg_score)
+print("Yes-probability:", yes_score)
+print("\nModel response:\n", response) # no(1)
+```
+
+---
+
+## 📓 Full Notebook Demo
+
+A full inference notebook is available at:
+
+```
+evaluation/inference_demo.ipynb
+```
+
+---
+
+# 📚 Citation
+
+If you use TFRank in your research, please cite:
+
+```bibtex
+@article{fan2025tfrank,
+  title={TFRank: Think-Free Reasoning Enables Practical Pointwise LLM Ranking},
+  author={Fan, Yongqi and Chen, Xiaoyang and Ye, Dezhi and Liu, Jie and Liang, Haijin and Ma, Jin and He, Ben and Sun, Yingfei and Ruan, Tong},
+  journal={arXiv preprint arXiv:2508.09539},
+  year={2025}
+}
+```
+
+---

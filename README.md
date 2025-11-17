@@ -100,7 +100,6 @@ query = "what nano means"
 
 document = "What does nano mean? Nano means very, very small. When it comes to making your body work, nano-materials are very important. A nanometre is one millionth of a millimetre. Your fingernail is about one millimetre thick. There are a lot of nano-materials making up your finger nail! Nanotechnology scientists move atoms and molecules around to make amazing new technologies. Nanotechnology is already in products like sunscreen."
 
-
 final_score, fg_score, yes_score, response = ranker.score(query, document)
 
 print("Final relevance score (0–1):", final_score) # 0.9997
@@ -117,7 +116,6 @@ print("\nModel response:\n", response) # yes(4)
 query = "what is a musket?"
 
 document = "8 Unusual Civil War Weapons You might think the Civil War was only fought with muskets, bayonets and cannons, but those weren’t the only deadly weapons to haunt the battlefields of the 1860s."
-
 
 final_score, fg_score, yes_score, response = ranker.score(query, document)
 

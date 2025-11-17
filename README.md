@@ -70,7 +70,7 @@ Below are two minimal examples demonstrating how to run TFRank for query–docum
 
 ```bash
 python -m vllm.entrypoints.openai.api_server \
-    --model /path/to/your/tfrank_checkpoint \
+    --model /path/to/your/tfrank_checkpoint # such as Johnnyfans/TFRank-GRPO-Qwen3-0.6B \
     --served-model-name rele_pointwise \
     --port 8113
 ```
@@ -93,7 +93,7 @@ ranker = TFRankDemoRanker(
 
 ---
 
-### 📝 Example 1 — Completely Irrelevant Document
+### 📝 Example 1 — Highly Relevant Document
 
 ```python
 query = "what nano means"
@@ -111,7 +111,7 @@ print("\nModel response:\n", response) # yes(4)
 
 ---
 
-### 📝 Example 2 — Highly Relevant Document
+### 📝 Example 2 — Irrelevant Document
 
 ```python
 query = "what is a musket?"
